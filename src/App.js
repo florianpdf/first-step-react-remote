@@ -13,7 +13,7 @@ function App() {
         <Nav />
       </div>
       <div className='cards'>
-        { persons.map(person => <Card name={person.name} lastName={person.lastName} city={person.city} age={person.age} />) }
+        { persons.map((person, index) => <Card key={index} name={person.name} lastName={person.lastName} city={person.city} age={person.age} />) }
       </div>
     </div>
   );
